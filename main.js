@@ -286,7 +286,7 @@ function onPointerMove(event) {
 			const selectedObject = intersects[ 0 ].object
 			addSelectedObject( selectedObject )
 			composer.outline.selectedObjects = selectedObjects
-			changeMessage ("popup toggle")
+			changeMessage ("find all the popup windows!")
 		}
 	}
 }

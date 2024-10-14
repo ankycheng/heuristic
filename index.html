@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-        <!-- links to all documentation and deploymet need to be accessible somewhere else. FUCK. omg is there a way to press links by using other keybaord things. to open link press alt shift whatever on your keyboad. what kinds of event listeners are there-->
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 		<title>xara alexander . online</title>
@@ -331,6 +330,7 @@
                 padding: 2px;
                 padding-left: 10px;
                 padding-right: 10px;
+                margin-bottom: 10px;
                 border-style: outset;
                 /* border-width: 3px; */
                 display: flex;
@@ -358,13 +358,17 @@
             #wings-left, #wings-right {
                 height: 30px;
             }
+
+            @media only screen and (max-width: 600px) {
+                /* instructions line up with the left side of the screen */
+                /* stop displaying or loading anything beyond the svg filter */
+            }
         
         </style>
 	</head>
 	<body>
-
-        <!-- -------_________________ -->
         <svg>
+
             <filter
               id="pixelate"
               x="0"
@@ -374,9 +378,7 @@
               filterUnits="userSpaceOnUse"
             ></filter>
         </svg>
-        <!-- -------_________________ -->
-
-        
+                
 <!-- page decoration -->
         <!-- border -->
         <img class="deco" id="vignette" src="./vignette5.png" alt="vignette" height="8000" width="6612"/>
@@ -389,24 +391,22 @@
         <div class="deco" id="box"><img src="./public/message-deco.png" alt="border" height="367" width="459"/><p id="messages">messages show up here!</p></div>
         <div class="deco" id="popScore"></div>
         <div class="deco" id="heartScore"></div>
-
+ 
         <div id="blocker">
             <div id="instructions">
               <img  id="fairy" src="./fairy.jpg" alt="fairy" height="200" width="200"/>
-              <p>you are entering my workspace!!</p>
-              <p>i completely handmade this website, aside from a few code snippets, which i have pointed out in the source code &#9829; </p>
-              <p>to view an accessible version of this website please click <a href="./2d.html">here</a> (for mobile displays or easier reading)</p>
-
+              <p>i handmade this website, aside from a few code snippets, which i have pointed out in the source code &#9829; </p>
+              <p>link to mobile/simplified vers: <a href="./page-down-message.html">here</a></p>
+              <button id="enterbutton"><img  id="wings-left" src="./wings-left.png" alt="wings" height="47" width="70"/>enter<img  id="wings-right" src="./wings-right.png" alt="wings" height="47" width="70"/></button>
               <div id="agreements-box">
-                <p>!!!!LEGAL AGREEMENT!!!</p>
-                <p>the user's browser window must have a screen width of over 2000px and height of over 700px (<span id="your window is currently: "></span>)</p>
+                <p>! ! ! !LEGAL AGREEMENT! ! !</p>
+                <p>ekjrfskjgfdfdkjb</p>
+                <p>please view in fullscreen</p>
                 <p>upon the users entrance of the space (utilizing the button below) the user reliquishes the ability to pursue legal action in the case of becoming stuck in there forever and ever</p>
                 <input type="checkbox" name="legal agreement checkbox" value="" id="legal-check">
-                <label for="legal-check">i agree :3 =^w^= :3</label>
+                <label for="legal-check">i agree :3 =^w^= :33</label>
               </div>
-              <p>rules: use wasd and arrow keys to move within the scene, try to find all the popup windows :&#41;</p>
               <div id="loading"></div>
-              <button id="enterbutton"><img  id="wings-left" src="./wings-left.png" alt="wings" height="47" width="70"/>enter<img  id="wings-right" src="./wings-right.png" alt="wings" height="47" width="70"/></button>
             </div>
         </div>
 
@@ -418,7 +418,6 @@
                 <p>works in progress</p>
             </div>
             <div class="scrollContents">
-
                     <div class="dropDown">
                         <!-- moomoo saves him -->
                         <div class="artpiece">
@@ -426,17 +425,13 @@
                                 <p>Moomoo Saves Him, 2024, video game</p>
                             </div>
                             <div class="description">
-                                <p>Moomoo Saves Him is a simple, singleplayer game built for desktop. The player enters the game as the main character Moomoo, and explores the structures surrounding her. As the player progresses, the comic panels scattered throughout the game gradually come to together to form Moomoo's narrative.</p>
-                                <p>I fully tapped into this idea when I called my boyfriend on a vacation in France with my parents. I had felt super distant from him from the past couple weeks, I was so far away from him that I was scared that I wouldnt be able to make him understand my emotions and how I felt as a person in the moment. I wound up telling him my rough ideas for this game. Everything I told him came out so rushed and taught that I realized that all the plot points I'd planned correlated with pain I was feeling now with my parents, as well as the struggles living abroad (in France) when I was just a kid.</p>
-                                <p>I plan on finishing this game August 2024. </p>
+                                <p>Moomoo Saves Him is a simple, singleplayer game built for desktop. the player enters the game as the main character Moomoo, and explores the structures surrounding her. as the player progresses, the comic panels scattered throughout the game gradually come to together to form Moomoo's narrative.</p>
                             </div>
                             
                             <div class="image">
                                 <img src="./Sprites.png" alt="collage of sprites" height="540" width="960"/>
-                               
                             </div>
-                            <a href="https://github.com/xaralu/Moomoo-Saves-Him">github repo :3 (press n to toggle link)</a>
-                            
+                            <a href="https://github.com/xaralu/Moomoo-Saves-Him" target="_blank">github repo :3 (press n to click)</a>
                         </div>
                     </div>
 
@@ -448,12 +443,11 @@
                             </div>
                             <div class="description">
                                 <p>Sad Cactus is a sculpture of a cactus that retracts its spines when touched, like a sensitive animal.</p>
-                                <p>This project was started around May, and was put on hold because of a lack of resources. Estimated completion September 2024.</p>
                             </div>
                             <div class="image">
                                 <img src="./cactus.png" alt="cactus progress shot within onshape" height="492" width="600"/>
                             </div>
-                            <a href="https://docs.google.com/presentation/d/1Veno8a08tORjJKa1j_Le7i1eOohGiC6FEuTHfTrCPA0/edit#slide=id.p">link to documentation (press b to toggle link)</a>
+                            <a href="https://docs.google.com/presentation/d/1Veno8a08tORjJKa1j_Le7i1eOohGiC6FEuTHfTrCPA0/edit#slide=id.p" target="_blank">link to documentation (press b to clikc)</a>
                         </div>
                         
                     </div>
@@ -479,23 +473,19 @@
                             <p>Radial Pond, 2024, web browser based art using 3JS software</p>
                         </div>
                         <div class="description">
-                            <p>Handmodeled meshes in Blender, with the goal of creating a serene landscape. Deployment link coming soon.</p>
-                        </div><!-- 
-                        <a id="meow" href="PUT THE LINK HERE">radial pond deployment link! (press r to toggle)</a> -->
+                            <p>interactive landscape using handmodeled meshes, made with 3JS and Blender, deployed online. <a href="/flowergalaxy/index.html" target="_blank"> press r to click</a></p>
+                        </div>
                         <div class="image">
                             <img src="./public/flowergalaxy.gif" alt="flower galaxy" height="492" width="600"/>
-                        </div>
+                        </div> 
                     </div>
 
                     <!-- face control -->
-                    <!-- it was about like. interaction with a computer and how you were acting as the program. when i was getting into human computer reelations  -->
-                    <!-- the project was deployed using Live2D -->
                     <div class="artpiece">
                         <div class="info">
                             <p>Face Control, 2022, digital art</p>
                         </div>
                         <div class="description">
-                            <p>I started this project much younger than I am now, at a point where I was just beginning to be interested in human computer relationships. For me, this project was about how computers could aid with expressing identity, as I was thinking about this in terms of social media, profile pictures, the modification of video content, and internet based subcultures.</p>
                         </div>
                         
                         <div class="image">
@@ -514,9 +504,8 @@
                         <div class="info">
                             <p>3d collage, 2022, multimedia</p>
                         </div>
-                        
                         <div class="description">
-                            <p> I was inspired by the deiatart user @celluleneuronale in the design of the central figure for this sculpture. The most prominent thing about the artists style is their linework, which is sketchy, almost elementary. I created my own piece using bits of wire, cardboard, printed cutouts, circuit boards that I took from an old radio, and discarded plastic. </p>
+                            <p> i was inspired by @celluleneuronale on DeviantArt in the design of the central figure. sculpture uses wire, cardboard, printed cutouts, circuit boards that i took from an old radio, and discarded plastic. </p>
                         </div>
                         <div class="image">
                             <img src="./3dCollageFront.jpg" alt="3d collage front view" height="1280" width="1280"/>
@@ -530,8 +519,7 @@
                             <p>becoming plastic, 2022, multimedia</p>
                         </div>
                         <div class="description">
-                            <p>View Documentation</p>
-                            <p>This sculpture was inspired by old mac computers, and inside of the structure is a 3D printed (3D modeled) fetus. This sculpture expressed the idea of being born plastic and of geometric, lifeless objects gaining vitality. </p>
+                            <p>this sculpture was inspired by old mac computers, the contrast between computer/flesh and geomteric/organic forms, and kinda expressed my feelings about the blur between these two. </p>
                         </div>
                         <div class="image">
                             <img src="./becomingPlastic.jpg" alt="baby fetus sculpture" height="2219" width="2506"/>
@@ -544,7 +532,7 @@
                             <p>plastic loveliness, 2022, milk jug, wire</p>
                         </div>
                         <div class="description">
-                            <p>This series was a reflection on tech being inescable. The hands were designed as if holding mobile phones, although the physical form of the phone was not included. I decided to use plastic as my medium to bring out the idea of waste and consumption. Each facet of the hands was individually selected from the milk jug and glued onto the wire frame.</p>
+                            <p>i loved making these. each facet i cut out of discarded milk jugs, and glued to a wire frame that I based off of my own hands. the idea was about waste and tech being omnipresent.</p>
                         </div>
                         <div class="image">
                             <img src="/public/handSculpture.png" alt="hand sculpture" height="1274" width="2098"/>
@@ -574,12 +562,12 @@
                                 src="/kitty.html">
                             </iframe> -->
 
-                            <p>An exploration of animation with a very rigorous process. This project was not intended to be deeply emotional, but independently developed its own personality throughout the process.</p>
+                            <p>an exploration of animation with a very rigorous process. This project was not intended to be deeply emotional, but independently developed its own personality throughout the process.</p>
                         </div>
                         <div class="image">
                             <video muted autoplay width="400" height="240" controls>
                                 <source src="./kitty_cat copy.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
+                                your browser SUCKs (doesnt support the html video tag :////)
                             </video>
 <!-- space to play kitty cat video -->
 <!-- will space work automatically for this? -->
@@ -592,13 +580,13 @@
                             <p>audio visual installation project, 2024, video</p>
                         </div>
                         <div class="description">
-                            <p>View Documentation</p>
-                            <p>An exploration of contrasting audio and visual mediums. The sound was constructed of a series of clips, primarily voicemail messages, of my family members who had tried to call me. The video is of the enviornment I was in, playing the pre recorded audio out loud. <br> I chose to film on the bridge because it symbolizes travel and transformation, and through my life I've moved a lot, and been unsure. I think by being on my own so much and confonted with the reality of who I am, people outside of me became valuable as sources of inspiration for myself, what I should be. So my messages from loved ones hit me hard, as when I listen back on this peice, I hear my identity reflected back from them, but also feel secure in their love for me even while I'm gone. </p>
+                            <p>the sound was constructed of a series of clips, primarily voicemail messages, of my family members who had tried to call me. the video was shot on the manhattan bridge at night, going home from a late class, playing the pre recorded audio out loud. </p>
                         </div>
                         <div class="image">
+                            <a href="https://drive.google.com/file/d/1iirVS9t6s7XvvB1NfBJmZAwyIdJ0PPMB/view?usp=sharing" target="_blank">clink me please</a>
                             <video muted autoplay width="400" height="240" controls>
                                 <!-- <source src="./audioinstallation.mp4" type="video/mp4"> -->
-                                Your browser does not support the video tag.
+                                your browser does not support the video tag!!!!!!!!
                             </video>
                         </div>
                     </div>
@@ -609,13 +597,12 @@
                             <p>Silk Maker, 2023, digital</p>
                         </div>
                         <div class="description">
-                            <p>I started this peice as the first drawing in a series of porn drawings to sell online. The peice became somewhat sad, and I wound up enjoying it as an expression of myself, growing up and becoming desensitized to the experience of being objectified.  </p>
+                            <p>i started this peice as the first drawing in a series of porn drawings to sell online. the peice became somewhat sad, and I wound up enjoying it as an expression of myself, growing up and becoming desensitized to the experience of being objectified.  </p>
                         </div>
                         <div class="image">
-                            <img src="/public/silkMaker.jpg" alt="digital drawing of a girl using grey tones" height="1466" width="1061"/>
+                            <img src="/public/silkMaker.jpg" alt="silk maker" height="1466" width="1061"/>
                         </div>
                     </div>
-<!-- lowkey i might not include this one? or i will redo it im not sure -->
                     
                     <!-- watermarks -->
                     <div class="artpiece">
@@ -635,14 +622,12 @@
             </div>
         </div>
         
-        <div class="tab" id="contact">
-            
+        <div class="tab" id="contact"> 
             <div class="tabTitle">
                 <p>contact Info</p>
             </div>
             <div id="contact-border"> <img src="./public/contact-border.png" alt="contact popup border" height="686" width="814"/> </div>
             
-
             <div class="scrollContents">
                 <div class="dropDown">
                     <p>Please reach me at xha1@nyu.edu</p>

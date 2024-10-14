@@ -15,7 +15,6 @@ export default defineConfig({
                 './three/examples/jsm/postprocessing/OutlinePass.js',
                 // './three/examples/jsm/postprocessing/FilmPass.js'
             ]
-            // sufhksjdfv
         },
       },
 })

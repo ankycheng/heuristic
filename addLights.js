@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 
 export function addLight() {
-	const light = new THREE.DirectionalLight(0x88D8C0, 5)
+	const light = new THREE.DirectionalLight(0x88D8C0, 10)
 	light.position.set(10, 10, -5)
 	return light
 }
